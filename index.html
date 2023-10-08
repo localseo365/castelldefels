@@ -354,13 +354,22 @@ padding-bottom: 0px !important;
 }
 } 
  /* Otros estilos existentes... */
-#whatsapp-button {
-    position: fixed;
-    bottom: 10px;
-    right: 10px; /* Cambia 'left' por 'right' */
-    z-index: 9999;
+.whatsapp-button {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #25D366;
+    padding: 10px 15px;
+    border-radius: 5px;
 }
-#whatsapp-button img {
+
+.whatsapp-button img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+whatsapp-button img {
     <a href="https://wa.me/34629501941" target="_blank" id="whatsapp-button">
     <img src="https://cdn-icons-png.flaticon.com/128/4423/4423697.png" alt="WhatsApp Icon">
 </a>
