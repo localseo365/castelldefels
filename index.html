@@ -365,10 +365,12 @@ padding-bottom: 0px !important;
     position: fixed;
     right: 10px;
     bottom: 10px; /* Si quieres que esté en la parte inferior de la pantalla */
+    z-index: 1000; /* Asegurarse de que el botón esté por encima de otros elementos */
 }
+
 .whatsapp-button img {
-    width: 24px;
-    height: 24px;
+    width: 40px; /* Aumentar el tamaño del ícono */
+    height: 40px; /* Aumentar el tamaño del ícono */
     margin-right: 10px;
     border: none;
     background-color: #25D366; /* Mover el color de fondo al ícono */
@@ -376,7 +378,6 @@ padding-bottom: 0px !important;
     padding: 10px; /* Espacio alrededor del ícono para que el fondo verde sea visible */
 }
 }
-
 @media (max-width: 768px) {
     /* Estilos específicos para pantallas pequeñas si los necesitas */
 }
