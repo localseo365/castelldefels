@@ -354,7 +354,8 @@ padding-bottom: 0px !important;
 }
 } 
  /* Otros estilos existentes... */
-whatsapp-button {
+
+.whatsapp-button {
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -362,21 +363,19 @@ whatsapp-button {
     background-color: #25D366;
     padding: 10px 15px;
     border-radius: 5px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px; /* Si quieres que esté en la parte inferior de la pantalla */
 }
 
-whatsapp-button img {
+.whatsapp-button img {
     width: 24px;
     height: 24px;
     margin-right: 10px;
 }
-whatsapp-button img {
-    <a href="https://wa.me/34629501941" target="_blank" id="whatsapp-button">
-    <img src="https://cdn-icons-png.flaticon.com/128/4423/4423697.png" alt="WhatsApp Icon">
-</a>
-}
 
 @media (max-width: 768px) {
-    ...
+    /* Estilos específicos para pantallas pequeñas si los necesitas */
 }
 </style>
 <script type='application/ld+json'> 
@@ -549,9 +548,8 @@ dropdownMenu.addEventListener('click', handleClick);
 });
 });
 </script>
- ...
-<a href="https://wa.me/1234567890" target="_blank" id="whatsapp-button">
-    <img src="path_to_whatsapp_icon.png" alt="WhatsApp">
+ <a href="https://wa.me/34629501941" target="_blank" class="whatsapp-button">
+    <img src="https://cdn-icons-png.flaticon.com/128/4423/4423697.png" alt="WhatsApp Icon">
 </a>
 </body>
 </html>
@@ -561,8 +559,5 @@ dropdownMenu.addEventListener('click', handleClick);
         ...
     });
 </script>
-</body>
-</html>
-
 </body>
 </html>
