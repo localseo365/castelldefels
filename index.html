@@ -354,26 +354,27 @@ padding-bottom: 0px !important;
 }
 } 
  /* Otros estilos existentes... */
-
 .whatsapp-button {
     display: flex;
     align-items: center;
     text-decoration: none;
     color: #fff;
-    background-color: #25D366;
+    background-color: transparent; /* Hacer el fondo del botón transparente */
     padding: 10px 15px;
     border-radius: 5px;
     position: fixed;
     right: 10px;
     bottom: 10px; /* Si quieres que esté en la parte inferior de la pantalla */
 }
-
 .whatsapp-button img {
     width: 24px;
     height: 24px;
     margin-right: 10px;
-    padding: 0;
-    background: transparent;
+    border: none;
+    background-color: #25D366; /* Mover el color de fondo al ícono */
+    border-radius: 50%; /* Hacer el ícono redondo */
+    padding: 10px; /* Espacio alrededor del ícono para que el fondo verde sea visible */
+}
 }
 
 @media (max-width: 768px) {
